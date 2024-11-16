@@ -1,6 +1,6 @@
-#How to use this repo:
+How to use this repo:
 
-##This repo has the mtaerial I used to write the blog https://community.sap.com/t5/technology-blogs-by-members/improving-latency-between-sap-btp-and-on-prem-s4-system-over-rfc-connection/ba-p/13932129 
+This repo has the mtaerial I used to write the blog https://community.sap.com/t5/technology-blogs-by-members/improving-latency-between-sap-btp-and-on-prem-s4-system-over-rfc-connection/ba-p/13932129 
 
 It has the following parts:
 
