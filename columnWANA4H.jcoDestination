@@ -5,7 +5,7 @@ jco.client.ashost=vhcala4hci
 jco.client.sysnr=00
 jco.client.client=001
 jco.client.user=DEVELOPER
-jco.client.passwd=u%=6lL.zVYtuQ0TH43HlPxO=Xp8VwpnlHT+xVTvuL:sk4QHA
+jco.client.passwd=
 jco.client.lang=en
 #
 #further useful standard properties (see documentation in DestinationDataProvider)
