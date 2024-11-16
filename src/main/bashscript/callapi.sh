@@ -1,20 +1,30 @@
 #!/bin/bash
-# Try 50 time
-echo $parentdir
+
 counter=1
 while [ $counter -le 50 ]
 do
-echo $counter
+echo  "Call # "$counter
+
 echo Calling WAN COL
-echo -n '|' >> WANCOL.txt
-curl --user 'sb-622adaa6-3712-4d19-ab94-55a0fb591b14!b319524|it-rt-a4c2be65trial!b26655:af2ddbff-01a5-4528-9063-46e3babd6e98$wAIznDh7382kh0xlSkA-b6L_sCX94wIdE2lt4SxpKpE=' https://a4c2be65trial.it-cpitrial05-rt.cfapps.us10-001.hana.ondemand.com/http/callRFCWANCOL >> WANCOL.txt
+if [ $counter -ne 1 ]
+then
+echo -n '|' >> _WANCOL.txt
+fi
+curl --data @input.xml --user 'sb-5f117724-89f9-45b0-8810-f74c9e79b13a!b357032|it-rt-49425266trial!b26655:2de6c301-fb06-4213-b764-9681a6ff6268$wr56omcAP52950UtPeW-U4ttUrHenBydOQtGF9j6PEE=' https://49425266trial.it-cpitrial05-rt.cfapps.us10-001.hana.ondemand.com/http/callRFCWANCOL -X GET >> _WANCOL.txt
 
 echo Calling LAN COL
-echo -n '|' >> LANCOL.txt
-curl --user 'sb-622adaa6-3712-4d19-ab94-55a0fb591b14!b319524|it-rt-a4c2be65trial!b26655:af2ddbff-01a5-4528-9063-46e3babd6e98$wAIznDh7382kh0xlSkA-b6L_sCX94wIdE2lt4SxpKpE=' https://a4c2be65trial.it-cpitrial05-rt.cfapps.us10-001.hana.ondemand.com/http/callRFCLANCOL >> LANCOL.txt
+if [ $counter -ne 1 ]
+then
+echo -n '|' >> _LANCOL.txt
+fi
+curl --data @input.xml --user 'sb-5f117724-89f9-45b0-8810-f74c9e79b13a!b357032|it-rt-49425266trial!b26655:2de6c301-fb06-4213-b764-9681a6ff6268$wr56omcAP52950UtPeW-U4ttUrHenBydOQtGF9j6PEE=' https://49425266trial.it-cpitrial05-rt.cfapps.us10-001.hana.ondemand.com/http/callRFCLANCOL -X GET >> _LANCOL.txt
+
 echo Calling ROW
-echo -n '|' >> ROW.txt
-curl --user 'sb-622adaa6-3712-4d19-ab94-55a0fb591b14!b319524|it-rt-a4c2be65trial!b26655:af2ddbff-01a5-4528-9063-46e3babd6e98$wAIznDh7382kh0xlSkA-b6L_sCX94wIdE2lt4SxpKpE=' https://a4c2be65trial.it-cpitrial05-rt.cfapps.us10-001.hana.ondemand.com/http/callRFCs >> ROW.txt
+if [ $counter -ne 1 ]
+then
+echo -n '|' >> _ROW.txt
+fi
+curl --data @input.xml --user 'sb-5f117724-89f9-45b0-8810-f74c9e79b13a!b357032|it-rt-49425266trial!b26655:2de6c301-fb06-4213-b764-9681a6ff6268$wr56omcAP52950UtPeW-U4ttUrHenBydOQtGF9j6PEE=' https://49425266trial.it-cpitrial05-rt.cfapps.us10-001.hana.ondemand.com/http/callRFC -X GET >> _ROW.txt
 ((counter++))
 done
-echo All done
+echo All DONE

@@ -35,7 +35,7 @@
                 <artifactId>javafx-maven-plugin</artifactId>
                 <version>0.0.8</version>
                 <configuration>
-                    <mainClass>org.saki.CallRFCAndShowGraph</mainClass>
+                    <mainClass>org.saki.CreateGraphFromExtractedData</mainClass>
                 </configuration>
             </plugin>
         </plugins>

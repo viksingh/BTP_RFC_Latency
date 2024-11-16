@@ -14,7 +14,7 @@ import javafx.stage.Stage;
 public class CreateGraphFromExtractedData extends Application {
 
 	//Set manually depending on payload size. Look at the file and update this
-	public static final String graphTitle = "RFC Processing Comparison using Cloud Integration (Big Single String  payload size 1.24 MB)";
+	public static final String graphTitle = "RFC Processing Comparison using Cloud Integration";
 
 	@Override public void start(Stage stage) {
 

@@ -20,7 +20,7 @@ public class CallRFCAndShowGraph extends Application {
 
 	//Set manually depending on payload size. Get rhe value  from postman and update this
 	public static final String graphTitle = "RFC Processing Comparison ";
-	public static final String FM_NAME = "Z_RFC_TEST_BIG_DATA";
+	public static final String FM_NAME = "Z_RFC_GET_FLIGHTS";
 
 	@Override public void start(Stage stage) {
 
