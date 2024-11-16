@@ -1,0 +1,27 @@
+FUNCTION Z_RFC_GET_SHORT_TABLE.
+*"----------------------------------------------------------------------
+*"*"Local Interface:
+*"  IMPORTING
+*"     VALUE(IM_INPUT) TYPE  CHAR10
+*"  EXPORTING
+*"     VALUE(TAB) TYPE  ZDEMO_SHORT_STR_TAB
+*"----------------------------------------------------------------------
+
+* 25,000 times => 1.24 MB
+* 100,000 times => 4.96 MB
+data: lv_mod type i .
+
+  DO 25000 TIMES.
+    append initial line to tab REFERENCE INTO data(lo_data).
+
+    lv_mod = sy-tabix mod 3.
+
+    lo_data->text =   lv_mod && 'Dev Container' .
+
+
+  ENDDO.
+
+
+
+
+ENDFUNCTION.
