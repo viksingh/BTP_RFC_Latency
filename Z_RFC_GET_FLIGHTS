@@ -1,0 +1,24 @@
+FUNCTION z_rfc_get_flights.
+*"----------------------------------------------------------------------
+*"*"Local Interface:
+*"  IMPORTING
+*"     VALUE(IM_INPUT) TYPE  CHAR10
+*"  EXPORTING
+*"     VALUE(FLIGHTS) TYPE  FLIGHTTAB
+*"----------------------------------------------------------------------
+
+* 1 time ==> 1.69 MB
+* 10 times ==> 16.91 MB
+* 100 times ==> 169.1 MB
+
+
+  DATA: lt_flights TYPE flighttab.
+  SELECT * FROM sflight INTO TABLE lt_flights.
+  DO 1 TIMES.
+    APPEND LINES OF lt_flights TO flights.
+  ENDDO.
+
+
+
+
+ENDFUNCTION.
