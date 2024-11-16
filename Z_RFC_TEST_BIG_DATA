@@ -1,0 +1,63 @@
+FUNCTION Z_RFC_TEST_BIG_DATA.
+*"----------------------------------------------------------------------
+*"*"Local Interface:
+*"  IMPORTING
+*"     VALUE(IM_INPUT) TYPE  CHAR10
+*"  EXPORTING
+*"     VALUE(EX_OUTPUT) TYPE  STRING
+*"----------------------------------------------------------------------
+
+*ASCII 95 represents underscore and ASCII 31 represents the non-printable unit separator
+
+*100 ==> 361.06 KB
+*1000 ==> 3.52 MB
+*10000 => 35.18 MB
+*10000 => 351.8 MB
+do 20000 times.
+
+
+
+ex_output = ex_output && 'This Voyager spacecraft was constructed by the United States of America. We are a community of 240 million human beings' &&
+'among the more than 4 billion who inhabit the planet Earth. We human beings are still divided into nation states, but these'  &&
+'states are rapidly becoming a global civilization. We cast this message into the cosmos ... It is likely to survive a billion years'  &&
+'into our future, when our civilization is profoundly altered and the surface of the Earth may be vastly changed. Of the 200'  &&
+'billion stars in the Milky Way galaxy, some – perhaps many – may have inhabited planets and space faring civilizations. If'  &&
+'one such civilization intercepts Voyager and can understand these recorded contents, here is our message: This is a present'  &&
+'from a small distant world, a token of our sounds, our science, our images, our music, our thoughts, and our feelings. We are'  &&
+'attempting to survive our time so we may live into yours. We hope some day, having solved the problems we face, to join a'  &&
+'community of galactic civilizations. This record represents our hope and our determination and our goodwill in a vast and'  &&
+'awesome universe'  &&
+'This Voyager spacecraft was constructed by the United States of America. We are a community of 240 million human beings' &&
+'among the more than 4 billion who inhabit the planet Earth. We human beings are still divided into nation states, but these'  &&
+'states are rapidly becoming a global civilization. We cast this message into the cosmos ... It is likely to survive a billion years'  &&
+'into our future, when our civilization is profoundly altered and the surface of the Earth may be vastly changed. Of the 200'  &&
+'billion stars in the Milky Way galaxy, some – perhaps many – may have inhabited planets and space faring civilizations. If'  &&
+'one such civilization intercepts Voyager and can understand these recorded contents, here is our message: This is a present'  &&
+'from a small distant world, a token of our sounds, our science, our images, our music, our thoughts, and our feelings. We are'  &&
+'attempting to survive our time so we may live into yours. We hope some day, having solved the problems we face, to join a'  &&
+'community of galactic civilizations. This record represents our hope and our determination and our goodwill in a vast and'  &&
+'awesome universe'  &&
+'This Voyager spacecraft was constructed by the United States of America. We are a community of 240 million human beings' &&
+'among the more than 4 billion who inhabit the planet Earth. We human beings are still divided into nation states, but these'  &&
+'states are rapidly becoming a global civilization. We cast this message into the cosmos ... It is likely to survive a billion years'  &&
+'into our future, when our civilization is profoundly altered and the surface of the Earth may be vastly changed. Of the 200'  &&
+'billion stars in the Milky Way galaxy, some – perhaps many – may have inhabited planets and space faring civilizations. If'  &&
+'one such civilization intercepts Voyager and can understand these recorded contents, here is our message: This is a present'  &&
+'from a small distant world, a token of our sounds, our science, our images, our music, our thoughts, and our feelings. We are'  &&
+'attempting to survive our time so we may live into yours. We hope some day, having solved the problems we face, to join a'  &&
+'community of galactic civilizations. This record represents our hope and our determination and our goodwill in a vast and'  &&
+'awesome universe'  &&
+'This Voyager spacecraft was constructed by the United States of America. We are a community of 240 million human beings' &&
+'among the more than 4 billion who inhabit the planet Earth. We human beings are still divided into nation states, but these'  &&
+'states are rapidly becoming a global civilization. We cast this message into the cosmos ... It is likely to survive a billion years'  &&
+'into our future, when our civilization is profoundly altered and the surface of the Earth may be vastly changed. Of the 200'  &&
+'billion stars in the Milky Way galaxy, some – perhaps many – may have inhabited planets and space faring civilizations. If'  &&
+'one such civilization intercepts Voyager and can understand these recorded contents, here is our message: This is a present'  &&
+'from a small distant world, a token of our sounds, our science, our images, our music, our thoughts, and our feelings. We are'  &&
+'attempting to survive our time so we may live into yours. We hope some day, having solved the problems we face, to join a'  &&
+'community of galactic civilizations. This record represents our hope and our determination and our goodwill in a vast and'  &&
+'awesome universe' .
+
+enddo.
+
+ENDFUNCTION.
